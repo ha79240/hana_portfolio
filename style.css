@@ -1,5 +1,34 @@
 
 
+.work-page {
+  padding: 40px 0;
+}
+
+.work-title {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+
+.work-sub {
+  font-size: 14px;
+  font-weight: normal;
+  color: #555;
+  margin-top: 24px;
+}
+
+.work-detail p {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #333;
+}
+
+.works-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 48px 32px;
+  margin-bottom: 160px;
+}
 
 /* 作品ページの画像サイズを統一 */
 .work-img img {
@@ -14,18 +43,41 @@
 
 /* トップページの作品サムネ画像を統一 */
 .works-item img {
-    width: 100%;
-    height: 250px;        /* ← 好きな高さに変更OK */
-    object-fit: cover;    /* 自動トリミングで綺麗に揃う */
-    border-radius: 8px;
-    display: block;
+ height: auto;
+  max-height: 260px;
+  object-fit: contain;
 }
 
 
 
 /* 全体の横幅を統一 */
 .wrapper {
-  max-width: 1200px;   /* サイトの最大幅（好みで変えられる！） */
-  margin: 0 auto;      /* 中央に配置 */
-  padding: 0 20px;     /* 横の余白（スマホで綺麗になる） */
+  max-width: 900px;  /* サイトの最大幅（好みで変えられる！） */
+  margin: 0 auto;    /* 中央に配置 */
+  padding: 0 24px;   /* 横の余白（スマホで綺麗になる） */
+}
+
+
+/* --- 動画ブロック --- */
+.video-block {
+  margin: 40px 0;
+}
+
+.video-caption {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.video-frame {
+  background: #f6f6f6;
+  padding: 16px;
+  border-radius: 20px;
+}
+
+.video-frame iframe {
+  width: 100%;
+  height: 360px;
+  border: none;
+  border-radius: 12px;
 }
